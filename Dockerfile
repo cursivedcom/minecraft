@@ -1,4 +1,4 @@
-FROM debian:unstable-slim
+FROM debian:unstable
 
 
 LABEL maintainer "doconnell@cursived.com"
