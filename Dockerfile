@@ -16,8 +16,8 @@ RUN apt update && \
           jq \
           mysql-client \
           sqlite\
-          python python-dev && \
-        rm -rf /var/cache/apk/*
+          python python-dev
+       
 
 RUN addgroup -g 1000 minecraft \
   && adduser -Ss /bin/false -u 1000 -G minecraft -h /home/minecraft minecraft \
