@@ -3,8 +3,8 @@ FROM debian:unstable
 
 LABEL maintainer "doconnell@cursived.com"
 
-RUN echo apt update && \
-        apt install \
+RUN apt update && \
+        apt install --yes \
           openjdk8-jre-base \
           openssl \
           imagemagick \
