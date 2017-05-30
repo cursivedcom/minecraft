@@ -20,8 +20,7 @@ RUN apt-get update && apt-get upgrade --yes && apt-get install --yes \
 
        
 
-RUN addgroup --gecos 1000 minecraft \
-  && adduser --shell /bin/false -u 1000 -G minecraft -h /home/minecraft minecraft \
+RUN adduser --shell /bin/false --uid 1000 -G --gid 1000 minecraft --home /home/minecraft minecraft \
   && mkdir /data \
   && mkdir /config \
   && mkdir /mods \
