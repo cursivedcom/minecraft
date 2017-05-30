@@ -2,7 +2,7 @@ version: '3'
 
 services:
   minecraft:
-    image: itzg/minecraft-server
+    image: cursived/minecraft
     ports:
       - "25565:25565"
     volumes:
@@ -15,7 +15,7 @@ services:
       RCON_PORT: 28016
     restart: always
   rcon:
-    image: itzg/rcon
+    image: cursived/rcon
     ports:
       - "4326:4326"
       - "4327:4327"

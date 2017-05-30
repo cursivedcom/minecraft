@@ -3,13 +3,13 @@ FROM debian:unstable
 
 LABEL maintainer "doconnell@cursived.com"
 
-RUN apt update && \
-        apt install --yes \
-          openjdk8-jre-base \
+
+RUN apt-get update && apt-get upgrade --yes && apt-get install --yes \
+           openjdk-8-jre-headles \
           openssl \
           imagemagick \
           lsof \
-          su-exec \
+          gosu \
           bash \
           curl \
           git \
@@ -17,6 +17,7 @@ RUN apt update && \
           mysql-client \
           sqlite\
           python python-dev
+
        
 
 RUN addgroup -g 1000 minecraft \

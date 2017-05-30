@@ -14,10 +14,10 @@ services:
       LEVEL_TYPE: LARGEBIOMES
       MAX_PLAYERS: 100
       CONSOLE: "false"
-    image: itzg/minecraft-server
+    image: cursived/minecraft-server
     restart: always
   rcon:
-    image: itzg/rcon
+    image: cursived/rcon
     ports:
       - "4326:4326"
       - "4327:4327"
