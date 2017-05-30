@@ -20,7 +20,7 @@ RUN apt-get update && apt-get upgrade --yes && apt-get install --yes \
 
        
 
-RUN adduser --shell /bin/false --uid 1000 --group --home /home/minecraft minecraft \
+RUN adduser --shell /bin/false --uid=1000 --home /home/minecraft minecraft \
   && mkdir /data \
   && mkdir /config \
   && mkdir /mods \
