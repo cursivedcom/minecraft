@@ -5,7 +5,7 @@ LABEL maintainer "doconnell@cursived.com"
 
 
 RUN apt-get update && apt-get upgrade --yes && apt-get install --yes \
-           openjdk-8-jre-headles \
+           openjdk-8-jre-headless \
           openssl \
           imagemagick \
           lsof \
