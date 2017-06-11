@@ -40,7 +40,7 @@ VOLUME ["/data","/mods","/config","/plugins","/home/minecraft"]
 COPY server.properties /tmp/server.properties
 WORKDIR /data
 
-ENTRYPOINT [ "/start" ]
+CMD [ "/start" ]
 
 ENV UID=1000 GID=1000 \
     MOTD="A Minecraft Server Powered by Docker" \
