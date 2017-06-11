@@ -15,9 +15,8 @@ RUN apt-get update && apt-get upgrade --yes && apt-get install --yes \
           git \
           jq \
           mysql-client \
-          sqlite\
-          top\
-          htop\
+          sqlite \
+          htop \
           python python-dev
 
        
